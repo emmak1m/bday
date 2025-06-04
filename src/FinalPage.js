@@ -7,7 +7,8 @@ function FinalPage() {
         <div className="app-bg">
             <div className="card">
                 <div className="card-text">
-                    We all love you, you are now old
+                    We all love you, you are now old<br />
+                    Happy 55생일 woman!🎉
                 </div>
                 <button className="continue-btn" onClick={() => navigate('/')}>restart this amazing gift</button>
             </div>
