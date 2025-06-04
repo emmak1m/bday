@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #f6f8fc 0%, #cfd8ec 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 18px;
+  box-shadow: 4px 6px 0 #222;
+  width: 90vw;
+  max-width: 350px;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px 24px 18px;
+  box-sizing: border-box;
+}
+
+.card-text {
+  font-family: 'Hina Mincho', serif;
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 2.2rem;
+}
+
+.continue-btn {
+  font-family: 'Hina Mincho', serif;
+  font-size: 1.3rem;
+  background: #cfd8ec;
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  padding: 16px 10px 20px;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.2s;
+}
+
+.continue-btn:hover,
+.continue-btn:focus {
+  background: #b0b9d6;
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 18px 4px 16px 4px;
+    min-height: 350px;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .continue-btn {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-image {
+  display: block;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  background: #ddd;
+  margin: 40px auto 16px auto;
+  border-radius: 0;
+}
+
+.card-caption {
+  width: 100%;
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 40px;
+}
